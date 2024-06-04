@@ -1,0 +1,169 @@
+body {
+    background-color: #f88397;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+}
+
+h1 {
+    color:black;
+    justify-self: center;
+    font-family:Impact;
+    font-size: 100px;
+    margin: 0px;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+.edit, .delete {
+    font-family: Impact;
+    border-style: solid;
+    border-color:#f88397;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+h2 {
+    color:black;
+    font-family:Impact;
+}
+
+#newTitle {
+    font-family: Impact;
+    position: absolute;
+    left: 25%;
+    margin-left: 20px;
+    justify-self: start;
+}
+
+#newBlogText {
+    font-family: Impact;
+    position: absolute;
+    left: 25%;
+    top: 215px;
+    margin-left: 20px;
+    justify-self: start;
+}
+
+.create-button {
+    grid-area: bt;
+    position: fixed;
+    padding-right: 70%;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    outline: none;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
+    font-family: Impact;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.back-btn {
+  display: grid;
+  justify-items: center;
+}
+
+.grid {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "bt blog .";
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.blog-items {
+    margin: 50px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
+    grid-area: blog;
+    padding: 0px 20px;
+    max-width: 70%;
+  }
+
+  #blog-item {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .blog-item-solo {
+    width: 50%;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .blog-item:hover, .btn:hover, .edit:hover, .delete:hover {
+    transform: scale(1.02);
+    cursor:pointer;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
+  }
+
+  .edit-box {
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    height: 280px;
+    padding: 10px;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
+  }
+
+  .title-box {
+    font-family: monospace;
+    width: 50%;
+    height: 25px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
+    position: relative;
+    margin: 20px 0px;
+  }
+
+  .new-blog {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+  .header {
+    width: auto;
+    height: 60px;
+    background-color: white;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    padding: 0px;
+  }

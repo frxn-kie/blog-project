@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/save" method="POST">
+    <container class="new-blog">
+        <label for="newTitle" id="newTitle">Write your title here</label>
+<input class="title-box" type="text" name="newTitle">
+<label for="newBlog" id="newBlogText">Write your blog here</label>
+    <textarea class="edit-box" id="newCopy" name="newCopy" rows="4" cols="50"></textarea>
+    <input class="btn" type="submit" value="Save">
+</container>
+</form>
+
+<%- include("partials/footer.ejs") %>

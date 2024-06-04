@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+
+<container class="grid">
+
+  <form action="/create" method="GET" class="create-button">
+    <input type="submit" name="newBlog" value="Create" class="btn">
+  </form>
+  
+
+  <container class="blog-items"><ul id="postsList">
+  <% posts.forEach(post=> { %>
+        <div id="blog-item">
+        <li>
+      <h2>
+        <%=post.title%>
+      </h2>
+      <p>
+        <%=post.copy%>
+      </p>
+      <a class="edit" href="/edit/<%= post.id %>">Edit</a>
+      <a class="delete" href="/delete/<%= post.id %>">Delete</a>
+    </li></div>
+    <% }); %>
+</ul></container>
+
+</container>
+<%- include("partials/footer.ejs") %>

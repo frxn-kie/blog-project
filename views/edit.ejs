@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+<% if (locals.foundPost) { %>
+    <form id="editForm" method="POST" action="/edit/save/<%=foundPost.id%>">
+      <input type="hidden" name="_method" value="PATCH">
+      <container class="new-blog">
+      <input class="title-box" type="text" name="title" value="<%=foundPost.title %>">
+      <textarea class="edit-box" id="copy" name="copy" rows="10"><%=foundPost.copy %></textarea>
+      <input class="btn" type="submit" value="Update">
+    </container>
+    </form>
+    <% } else {%>
+        <% return res.status(404).json({message: "Post not found"}); %>
+      <% } %>
+
+      <%- include("partials/footer.ejs") %>

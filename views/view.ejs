@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+<% if (locals.foundPost) { %>
+    <div class="blog-item-solo">
+        <li>
+      <h2>
+        <%=foundPost.title%>
+      </h2>
+      <p>
+        <%=foundPost.copy%>
+      </p>
+      <a class="edit" href="/edit/<%= foundPost.id %>">Edit</a>
+      <a class="delete" href="/delete/<%= foundPost.id %>">Delete</a>
+    </li></div>
+    <% } else {%>
+        <% return res.status(404).json({message: "Post not found"}); %>
+      <% } %>
+      <form class="back-btn" action="/">
+        <input class="btn" type="submit" value="Back">
+      </form>
+      <%- include("partials/footer.ejs") %>
