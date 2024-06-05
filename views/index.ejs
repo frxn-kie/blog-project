@@ -1,14 +1,21 @@
 <%- include("partials/header.ejs") %>
 
-<container class="grid">
+<div class="grid">
 
   <form action="/create" method="GET" class="create-button">
     <input type="submit" name="newBlog" value="Create" class="btn">
   </form>
   
+  <% if (posts.length<1) { %>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          document.querySelector(".blog-items").classList.add("empty");
+      });
+  </script>
+  <% } %>
 
-  <container class="blog-items"><ul id="postsList">
-  <% posts.forEach(post=> { %>
+  <div class="blog-items"><ul id="postsList">
+    <% posts.forEach(post=> { %>
         <div id="blog-item">
         <li>
       <h2>
@@ -21,6 +28,7 @@
       <a class="delete" href="/delete/<%= post.id %>">Delete</a>
     </li></div>
     <% }); %>
+
 </ul></container>
 
 </container>

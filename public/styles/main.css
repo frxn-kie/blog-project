@@ -112,6 +112,10 @@ h2 {
     max-width: 70%;
   }
 
+.empty {
+  padding: 0px;
+}
+
   #blog-item {
     background-color: hsl(0, 0%, 100%);
     padding: 20px 40px;
