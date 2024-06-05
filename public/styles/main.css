@@ -31,6 +31,12 @@ a {
     padding: 5px 10px;
 }
 
+@media (max-width: 600px) {
+  .edit, .delete {
+margin-bottom: 5px;
+  }
+}
+
 h2 {
     color:black;
     font-family:Impact;
@@ -74,6 +80,7 @@ h2 {
 @media (max-width: 600px) {
   .btn {
   font-size: 8px;
+  padding: 5px 10px;
   }
 }
 
