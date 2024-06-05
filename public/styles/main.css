@@ -12,6 +12,12 @@ h1 {
     margin: 0px;
 }
 
+@media (max-width: 600px) {
+  h1 {
+  font-size: 60px;
+  }
+}
+
 a {
     all: unset;
     cursor: pointer;
@@ -63,6 +69,12 @@ h2 {
     font-family: Impact;
     font-size: 14pt;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .btn {
+  font-size: 8px;
+  }
 }
 
 .back-btn {
