@@ -9,7 +9,7 @@ This project demonstrates use of HTTP requests to update content on a live websi
 ### Prerequisites
 
 - Node.js version 20.11.0
-- npm/Yarn version 10.2.4
+- npm version 10.2.4
 
 ### Steps
 
