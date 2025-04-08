@@ -9,7 +9,7 @@ This project demonstrates use of HTTP requests to update content on a live websi
 ### Prerequisites
 
 - Node.js version 20.11.0
-- npm/Yarn version 10.2.4
+- npm version 10.2.4
 
 ### Steps
 
@@ -19,7 +19,7 @@ This project demonstrates use of HTTP requests to update content on a live websi
     ```
 2. Navigate to the project directory:
     ```sh
-    cd Capstone Project 5
+    cd blog-project
     ```
 3. Install dependencies:
     ```sh
@@ -31,7 +31,7 @@ To start the application, use the following command:
 ```sh
 nodemon index.js
 ```
-Navigate to http://localhost:8080
+Navigate to http://localhost:3000
 
 ## Credits
 
